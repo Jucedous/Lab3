@@ -4,11 +4,11 @@ import java.net.URL;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] unused) {
+        System.out.print(urlToString("http://erdani.com/tdpl/hamlet.txt"));
         System.out.println("The number of word is " + urlToString("http://erdani.com/tdpl/hamlet.txt").length());
         String[] x = urlToString("http://erdani.com/tdpl/hamlet.txt").split(" ");
         System.out.println("The number of one word is " + x.length);
-        System.out.println("The number of selected word is " + uniqueWord("of"));
-        System.out.print(urlToString("http://erdani.com/tdpl/hamlet.txt"));
+        System.out.println("The number of selected word is " + uniqueWord("this"));
     }
     /**
      * Retrieve contents from a URL and return them as a string.
